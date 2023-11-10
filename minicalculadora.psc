@@ -6,7 +6,7 @@ Algoritmo minicalculadora
   leer num_a;
   Escribir "Introducir numero b";
   leer num_b;
-  Escribir "Introducir 1(suma), 2(resta), 3(multiplicar)";
+  Escribir "Introducir 1(suma), 2(resta), 3(multiplicar), 4(dividir)";
   leer opcion;
   
   si (opcion =1) entonces
@@ -21,10 +21,15 @@ Algoritmo minicalculadora
 			 num_res<- num_a * num_b;
 			 Escribir "La multiplicacion de los dos numeros es :" , num_res;
 		 SiNo
-			 Escribir "Esa operacion no esta permitida";
-		 FinSi
-		
-     finsi
- finsi
+			 si(opcion=4) Entonces
+				 num_res<- num_a/ num_b;
+				 Escribir "La division de los dos numeros es: ", num_res;
+			 SiNo
+				 Escribir "Esa operacion no esta permitida";
+			 FinSi
+		finsi
+	finsi
+FinSi
+
 FinAlgoritmo
   
